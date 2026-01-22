@@ -1,7 +1,7 @@
 package code
 
-import "community-backend/pkg/error"
+import "community-backend/pkg/xcode"
 
 var (
-	RegisterNameEmpty = error.New(20001, "Register name cannot be empty")
+	RegisterNameEmpty = xcode.New(20001, "Register name cannot be empty")
 )

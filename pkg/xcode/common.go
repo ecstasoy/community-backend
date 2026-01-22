@@ -1,4 +1,4 @@
-package error
+package xcode
 
 var (
 	OK                 = add(0, "OK")

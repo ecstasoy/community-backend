@@ -4,6 +4,7 @@
 package main
 
 import (
+	"community-backend/pkg/xcode"
 	"flag"
 	"fmt"
 
@@ -28,6 +29,8 @@ func main() {
 
 	ctx := svc.NewServiceContext(c)
 	handler.RegisterHandlers(server, ctx)
+
+	httpx.SetErrorHandler(xcode.ErrHandler)
 
 	fmt.Printf("Starting server at %s:%d...\n", c.Host, c.Port)
 	server.Start()

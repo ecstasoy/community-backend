@@ -1,8 +1,8 @@
-package error
+package xcode
 
 import "strconv"
 
-type Error interface {
+type XCode interface {
 	Error() string
 	Code() int
 	Message() string
