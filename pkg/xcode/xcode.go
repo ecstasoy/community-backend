@@ -6,7 +6,7 @@ type XCode interface {
 	Error() string
 	Code() int
 	Message() string
-	Details() interface{}
+	Details() []interface{}
 }
 
 type Code struct {
