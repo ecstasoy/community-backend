@@ -14,6 +14,7 @@ import (
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/rest"
+	"github.com/zeromicro/go-zero/rest/httpx"
 )
 
 var configFile = flag.String("f", "etc/applet-api.yaml", "the config file")
